@@ -1,0 +1,69 @@
+\documentclass{article}
+
+\usepackage{microtype}
+
+\usepackage{newunicodechar}
+\newunicodechar{α}{\ensuremath \alpha}
+\newunicodechar{β}{\ensuremath \beta}
+
+\usepackage{listings}
+\lstdefinelanguage{julia}{
+  basicstyle=\small\ttfamily,
+  showspaces=false,
+  showstringspaces=false,
+  keywordstyle={\textbf},
+  morekeywords={if,else,elseif,while,for,begin,end,quote,try,catch,return,local,abstract,function,generated,macro,ccall,finally,typealias,break,continue,type,global,module,using,import,export,const,let,bitstype,do,in,baremodule,importall,immutable},
+  escapeinside={~}{~},
+  morecomment=[l]{\#},
+  commentstyle={},
+  morestring=[b]",
+}
+\lstset{language=julia, numbers=left, numberstyle=\tiny, mathescape=true}
+
+%XXX REMOVE FOR FINAL SUBMISSION
+\usepackage{todonotes}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\bibliographystyle{siam}
+
+\title{The Title}
+
+\author{%
+    Jiahao Chen
+    \thanks{Computer Science and Artificial Intelligence Laboratory,
+           Massachusetts Institute of Technology,
+           Cambridge, Massachusetts, 02139 ({\tt jiahao@mit.edu})}
+    %
+    %\and
+    %Alan Edelman
+    %\thanks{Department of Mathematics and Computer Science and Artificial Intelligence Laboratory,
+    %        Massachusetts Institute of Technology,
+    %        Cambridge, Massachusetts, 02139 ({\tt edelman@mit.edu})}
+}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+My abstract.
+\end{abstract}
+
+%XXX REMOVE BEFORE FINAL SUBMISSION
+\listoftodos
+
+\section{Introduction}
+
+\section{Implementation}
+
+\section{Results}
+
+\section{Conclusions}
+
+\section*{Acknowledgments}
+
+\bibliography{bib/bib}
+
+\end{document}
