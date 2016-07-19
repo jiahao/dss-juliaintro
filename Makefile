@@ -1,7 +1,7 @@
 MAIN=main
 
 pdf:
-	latexmk -pdf $(MAIN) -auxdir=output -outdir=output
+	latexmk -xelatex $(MAIN) -auxdir=output -outdir=output
 
 all: pdf
 	make -C code/programs
